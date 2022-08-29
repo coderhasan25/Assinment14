@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-manu{
+    text-align: center;
+}
+.header-manu ul{
+    text-align: center;
+    margin: 5px;
+}
+.header-manu ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: aqua;
+    font-size: 15px;
+    
+    
+}
+.header-manu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    font-weight: bold;
+}
+.header-manu ul li:hover {
+    background-color: aliceblue;
+    
+}
+.header-manu ul li a:hover {
+    color: aqua;
+    
+}
+
+.header-manu ul li a::before{
+    content: ' ';
+    height: 2px;
+    width: 0;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .4s;
+}
+.header-manu ul li a:hover::before{
+    width: 100%;  
+}
+
+.planner-div{
+    padding: 50px 0;
+    background-color: aqua;
+    text-align: center;
+}
+.planner-div p{
+    color: white;
+    
+}
+.planner-div h1{
+    color: white;
+    padding: 10px 0;
+    font-size: 40px;
+}
+.planner-div span a{
+    text-decoration: none;
+    padding: 15px ;
+    background-color: white;
+    border-radius: 3px;
+    color: gray;
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+.planner-div span a::before{
+    content: '\f17b';
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 800;
+}
+.planner-div span a::before{
+    content: '';
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: .4s;
+    z-index: -1;
+
+}
+.planner-div span a:hover:before{
+    width: 100%;
+}
+/* img-div */
+
+.img-div{
+    text-align: center;
+    padding: 50px 0 120px 0;
+}
+
+/* conten */
+
+.conten{
+    padding: 0 0 50px 0;
+}
+/* .img-div .conten{}
+.img-div .conten h1{}
+.img-div .conten p{} */
+
+/* all-img-div */
+.comon-div{
+    width: 250px;
+    margin: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+.comon-div img{
+    max-width: 100%;
+    transition: .5s;
+}
+.all-img-div {
+    display: inline-block;
+    width: 1200px;
+    height: auto;
+    
+}
+.all-img-div .img1{
+    
+}
+.all-img-div .img1 img:hover{
+    transform: rotate(360deg);  
+}
+.all-img-div .img2 img:hover{
+    transform: skew(20deg,20deg);
+}
+.all-img-div .img3 img:hover{
+    transform: rotate(20deg);
+}
+.all-img-div .img4 img:hover{
+    transform: scale(1.1) rotate(360deg);
+}
+.all-img-div .img5 img:hover{
+    transform: translate(50px , 50px) rotate(40deg);
+}
+.all-img-div .img6 img:hover{
+    transform: scale(1.1) rotate(-50deg);
+}
+.all-img-div .img7 img:hover{
+    transform: rotatey(20deg) rotate(360deg);
+}
+.all-img-div .img8 img:hover{
+    transform: rotate(40deg) scale(1.1);
+}
+  
+.step-div{
+    padding: 50px  200px;
+    
+    position: relative;
+    
+}
+.step-div h1{
+    color: aliceblue;
+    font-size: 25px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.step-1 {
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    position: absolute;
+    top: 20;
+    left: 200px;
+    transform: rotate(-40deg);
+    cursor: pointer;
+    transition: .4s;
+}
+.step-1:hover{
+    transform: rotate(0deg);
+}
+.step-2 {
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    cursor: pointer;
+    /* transform: rotate(360deg); */
+    transition: 1s;
+}
+.step-2:hover{
+    /* transform: rotate(0deg); */
+    transform: rotate(360deg);
+}
+.step-3 {
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    position: absolute;
+    top: 20;
+    right: 200px;
+    transform: rotate(40deg);
+    cursor: pointer;
+    transition: .4s;
+}
+.step-3:hover{
+    transform: rotate(0deg);
+}
+.all-contect{
+    text-align: center;
+}
+.footer-div{
+    background-color: #141b22;
+    color: white;
+    font-family: 'Roboto';
+    text-align: center;
+    padding: 30px 0;
+}
